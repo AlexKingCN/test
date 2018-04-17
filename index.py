@@ -235,15 +235,15 @@ def loadTree(filename):
 
 
 if __name__ == "__main__":
-    dataSet,labels = createDataSet()
+    # dataSet,labels = createDataSet()
     # shangEnt = calcShannonEnt(dataSet)
     # retDataSet = splitDataSet(dataSet,1,1)
     # shangEntRet = calcShannonEnt(retDataSet)
-    myTree =  createTree(dataSet, labels)
+    # myTree =  createTree(dataSet, labels)
     # dataSet,labels 已经改变
     # print myTree
     # createPlot(myTree)
-    storeTree(myTree)
+    # storeTree(myTree)
     # myTree = loadTree('myTree')
 
     result = classify(myTree,labels,['elder', 'no', 'yes', '2'])
